@@ -24,12 +24,15 @@ public class SmsCodeAuthenticationFilter extends AbstractAuthenticationProcessin
 	// =====================================================================================
 
 	private String mobileParameter = SecurityConstants.DEFAULT_PARAMETER_NAME_MOBILE;
+	
+	//当前这个过滤器是否只处理post请求
 	private boolean postOnly = true;
 
 	// ~ Constructors
 	// ===================================================================================================
 
 	public SmsCodeAuthenticationFilter() {
+		//过滤器处理的请求
 		super(new AntPathRequestMatcher(SecurityConstants.DEFAULT_LOGIN_PROCESSING_URL_MOBILE, "POST"));
 	}
 

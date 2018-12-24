@@ -23,6 +23,7 @@ public class SmsCodeAuthenticationProvider implements AuthenticationProvider {
 	 * 
 	 * @see org.springframework.security.authentication.AuthenticationProvider#
 	 * authenticate(org.springframework.security.core.Authentication)
+	   * 身份认证的逻辑
 	 */
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
